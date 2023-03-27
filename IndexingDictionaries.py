@@ -1,6 +1,7 @@
 #to recap on indexing strings and lists
 
 stringOne = 'This is a string with lots of characters.'
+#            01234567890123456789012345678901234567890            
 print(stringOne)
 
 #Accessing single characters from a string
@@ -13,7 +14,7 @@ print(lastCharacter)
 
 
 #Accessing a segment of a string
-stringSlice = stringOne[4:23]
+stringSlice = stringOne[8:21]
 print(stringSlice)
 
 
@@ -29,44 +30,46 @@ print(insidelist)
 
 #Dictionaries are created differently, requiring a key:value pair for each element.
 #Here the keys are the acronyms and the values are what they stand for
-Irish={'GRMA':"Go Raibh Maith Agat","OMD":"O Mo Dhia","GOA":"Gaire Os Ard","MGL":"Maith Go Leor"}
+Gaeilge={'GRMA':"Go Raibh Maith Agat","OMD":"O Mo Dhia","GOA":"Gaire Os Ard","MGL":"Maith Go Leor"}
 
 #you can get values by calling dict[key]
-thankYou = Irish['GRMA']
+thankYou = Gaeilge['GRMA']
 print(thankYou)
+print(Gaeilge['GRMA'])
 
 #the list of keys can be found using the keys() method on the dictionary
-keys = Irish.keys()
+keys = Gaeilge.keys()
 print(keys)
 
 #accessing dictionary values by their keys
-omg1 = Irish['OMD']
-omg2 = Irish.get('OMD')
+omg1 = Gaeilge['OMD']
+omg2 = Gaeilge.get('OMD')
 
 print(omg1)
 print(omg2)
 
 #let's build in a mistake. if the key cannot be found the program will terminate
-#omg1 = Irish['GAO']
+#omg1 = Gaeilge['GAO']
 
-#'GAO' is not one of the keys in Irish. The get method looks for 'GAO' and if it cannot find it returns 'acronym missing')
-omg2 = Irish.get('GAO','acronym missing')
+#'GAO' is not one of the keys in Gaeilge. The get method looks for 'GAO' and if it cannot find it returns 'acronym missing')
+omg2 = Gaeilge.get('GAO','acronym missing')
 
-print(omg1)
+#print(omg1)
 print(omg2)
 
+
 #removing an item using .pop(key)
-print(Irish)
-Irish.pop('OMD')
-print(Irish)
+print(Gaeilge)
+Gaeilge.pop('OMD')
+print(Gaeilge)
 
 
 #updating dictionary elements using bracket or .update(key:value) notation
-Irish['GOA']='Gaire Oos Ard'
-print(Irish)
-Irish.update({'GOA':'Gallimh Os Ard'})
-print(Irish)
+Gaeilge['GOA']='Gaire Oos Ard'
+print(Gaeilge)
+Gaeilge.update({'GOA':'Gallimh Os Ard'})
+print(Gaeilge)
 
 #deleting all elements of a dictionary
-Irish.clear()
-print(Irish)
+Gaeilge.clear()
+print(Gaeilge)
