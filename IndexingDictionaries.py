@@ -14,7 +14,7 @@ print(lastCharacter)
 
 
 #Accessing a segment of a string
-stringSlice = stringOne[8:21]
+stringSlice = stringOne[8:23]
 print(stringSlice)
 
 
