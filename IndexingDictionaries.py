@@ -38,8 +38,8 @@ print(thankYou)
 print(Gaeilge['GRMA'])
 
 #the list of keys can be found using the keys() method on the dictionary
-keys = Gaeilge.keys()
-print(keys)
+allKeys = Gaeilge.keys()
+print(allKeys)
 
 #accessing dictionary values by their keys
 omg1 = Gaeilge['OMD']
