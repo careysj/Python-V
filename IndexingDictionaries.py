@@ -41,6 +41,9 @@ print(Gaeilge['GRMA'])
 allKeys = Gaeilge.keys()
 print(allKeys)
 
+#an alternative way to create a dictionary is to use the dict() function
+#Gaeilge = dict('GRMA'="Go Raibh Maith Agat","OMD"="O Mo Dhia","GOA"="Gaire Os Ard","MGL"="Maith Go Leor")
+
 #accessing dictionary values by their keys
 omg1 = Gaeilge['OMD']
 omg2 = Gaeilge.get('OMD')
