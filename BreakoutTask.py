@@ -1,4 +1,4 @@
-# code recipes here: https://pyowm.readthedocs.io/en/latest/v3/code-recipes.html#onecall
+# code recipes  here: https://pyowm.readthedocs.io/en/latest/v3/code-recipes.html#onecall
 # https://pyowm.readthedocs.io/_/downloads/en/develop/pdf/
 
 from pyowm.owm import OWM  #importing the open weather map python library
