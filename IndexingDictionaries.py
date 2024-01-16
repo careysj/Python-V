@@ -1,6 +1,6 @@
 #to recap on indexing strings and lists
 
-stringOne = 'This is a string with lots of characters.'
+stringOne = 'This is a string with lots of characters .'
 #            01234567890123456789012345678901234567890            
 print(stringOne)
 
